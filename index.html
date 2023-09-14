@@ -46,7 +46,7 @@
   </div>
 
   <div class="mdui-drawer" id="main-drawer">
-    <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+    <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;" mdui-tab>
       <div class=" mdui-collapse-item mdui-collapse-item-open">
         <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
           <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">near_me</i>
@@ -55,6 +55,7 @@
         </div>
         <div class="mdui-collapse-item-body mdui-list" mdui-tab>
           <a href="#e1" class="mdui-list-item mdui-ripple">简介</a>
+          <a href="#e4table" class="mdui-list-item mdui-ripple">表格</a>
           <a href="#e2" class="mdui-list-item mdui-ripple">=</a>
           <a href="#e3" class="mdui-list-item mdui-ripple">=</a>
         </div>
@@ -105,7 +106,7 @@
           <div class="mdui-list-item-content">(＃°Д°)</div>
           <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
-        <div class="mdui-collapse-item-body mdui-list">
+        <div class="mdui-collapse-item-body mdui-list" mdui-tab>
           <a href="##" class="mdui-list-item mdui-ripple">+</a>
           <a href="##" class="mdui-list-item mdui-ripple">-</a>
         </div>
@@ -130,11 +131,9 @@
 
   <div id="e1" class="mdui-container mdui-p-a-2" style="height: auto!important;">
 
-
-
-    <div class="chapter" style="height: auto !important;">
+    <div style="height: auto !important;">
       <div class="mdui-typo">
-        <h2 class="chapter-title chapter-title-first mdui-text-color-theme">
+        <h2 class="mdui-text-color-theme">
           JavaEE作业
         </h2>
         <h3>小组成员：陆闽杰</h3>
@@ -142,10 +141,14 @@
       </div>
 
       <div class="mdui-typo" style="height: auto !important;">
-        <h2 class="chapter-title mdui-text-color-theme">HTML（超文本标记语言）</h2>
+        <h2 class=" mdui-text-color-theme">HTML（超文本标记语言）</h2>
 
-        <h5 class="article-title">HTML的全称为超文本标记语言，是一种标记语言。它包括一系列标签，通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等。</h5>
-        <h5 class="article-title">超文本是一种组织信息的方式，它通过超级链接方法将文本中的文字、图表与其他信息媒体相关联。这些相互关联的信息媒体可能在同一文本中，也可能是其他文件，或是地理位置相距遥远的某台计算机上的文件。这种组织信息方式将分布在不同位置的信息资源用随机方式进行连接，为人们查找，检索信息提供方便。</h5>
+        <h5>
+          HTML的全称为超文本标记语言，是一种标记语言。它包括一系列标签，通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等。
+        </h5>
+        <h5>
+          超文本是一种组织信息的方式，它通过超级链接方法将文本中的文字、图表与其他信息媒体相关联。这些相互关联的信息媒体可能在同一文本中，也可能是其他文件，或是地理位置相距遥远的某台计算机上的文件。这种组织信息方式将分布在不同位置的信息资源用随机方式进行连接，为人们查找，检索信息提供方便。
+        </h5>
 
         <p>最简单的HTML页面↓</p>
         <pre>
@@ -170,8 +173,63 @@
   </div>
 
 
-  <div id="e2" class="mdui-container mdui-p-a-2">web content</div>
-  <div id="e3" class="mdui-container mdui-p-a-2">web content</div>
+  <div id="e2" class="mdui-container mdui-p-a-2">web content2</div>
+
+  <div id="e3" class="mdui-container mdui-p-a-2">web content3</div>
+
+  <div id="e4table" class="mdui-container mdui-p-a-2">
+
+    <div class="mdui-typo">
+      <h2 class="mdui-text-color-theme">tr标记属性</h2>
+    </div>
+
+    <table width="80%" border="2px" align="center" cellpadding="8px" cellspaceing="0px">
+      <caption>产品价格表</caption>
+      <tr>
+        <th>文具</th>
+        <th>价格</th>
+      </tr>
+      <tr style="background-color: green;">
+        <td>钢笔</td>
+        <td>$2.5/支</td>
+      </tr>
+      <tr>
+        <td style="padding-top: 24px;">铅笔</td>
+        <td style="padding-top: 24px;">$0.25/支</td>
+      </tr>
+      <tr style="text-align: right;">
+        <td>橡皮擦</td>
+        <td>$0.55/块</td>
+      </tr>
+    </table>
+
+    <div class="mdui-typo">
+      <h2 class="mdui-text-color-theme">td、th标记属性</h2>
+    </div>
+
+    <table width="80%" border="2px" align="center" cellpadding="8px" cellspaceing="0px">
+      <caption>产品价格表</caption>
+      <tr>
+        <th style="background-color: purple;">文具</th>
+        <th>价格</th>
+      </tr>
+      <tr style="text-align:center;">
+        <td rowspan="2">
+          钢笔
+        </td>
+        <td>
+          $2.5/支
+        </td>
+      </tr>
+      <tr>
+        <td>
+          $0.45/支
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
   <div class="mdui-dialog" id="dialog-docs-theme" style="display: none; top: 74.1795px; height: 840.641px;">
     <div class="mdui-dialog-title">设置文档主题</div>
     <div class="mdui-dialog-content" style="height: 720.641px;">
