@@ -1,0 +1,33 @@
+.site-category {
+    background-color: #666666;
+    margin-top: 48px;
+    margin-left: 96px;
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+}
+.title{
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    height: 42px;
+    line-height: 42px;
+}
+ul{
+    color:#FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+i{
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    line-height: 16px;
+    vertical-align:middle;
+}
+
+a:hover {background-color: #FF6700;}
